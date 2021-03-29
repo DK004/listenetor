@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Listenetor</title>
+    <style>
+        .navbar{
+            background-color: rebeccapurple;
+        }
+        body{
+            background-color: whitesmoke;
+            
+        }
+        textarea{
+          box-shadow: 9px 6px 15px rgba(0,0,0,0.1);
+            color: rgb(20, 20, 20);
+        }
+        button{
+            background-color: rebeccapurple !important;
+            color: white !important;
+        }
+
+        .main{
+          overflow: hidden;
+          padding: 25px;
+        }
+
+        /* .alert{
+            background-color: #0D0D0D !important;
+        } */
+        #stop, #download{
+            display:none;
+            
+        }
+
+  .text{
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    
+  }
+
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><i class="fa fa-quote-left"></i>  Listenetor</a>
+  </div>
+</nav>
+
+<div class="row main">
+  
+  
+  <div class="text col-md-4 py-5">
+    <h4 class="h4 mb-4" style="color: rebeccapurple;">
+    <i class="fa fa-quote-left"></i> Listenetor :  A New Way Of Writing
+    </h4>   
+  
+    <p>
+        Listenetor is the new way of writing where you don't have to write a single word rather just say it. This platform allows you to write a long paragraph by just speaking in your mic.It changes the old traditional way of writing with pen and paper or typing on your keyboard. Listenetor listens to you and convert your words into text. It allows you to edit at any point while speaking. We also provide an option to save the file after you are completed your document.
+    </p>
+    <p>
+      First allow your mic permission if asked and start speaking. Once there is some text infront of you, you can edit/format it and after you are satisfied , the download button will appear and you can download a .txt file. This is specially designed for writers, students who have to write long paras of book or assingments.
+    </p>
+    <p>
+        This WebApp is created by-</i><a href="http://arpitalkari.000webhostapp.com"> Arpit Alkari</a>.
+    </p>
+    </div>
+      
+      
+      <div class="all col-md-8">
+        <div class="form-group ">
+          <textarea name="text-area" id="textbox" class="form-control mt-5 my-3" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-default"  id="start"><i class="fa fa-play"></i>&nbsp; Start</button>
+                <button class="btn btn-default mx-1"  id="stop"><i class="fa fa-pause"></i>&nbsp; Stop</button>
+                <button class="btn btn-default mx-2" id="download"><i class="fa fa-download"></i>&nbsp; Download</button>
+              </div>
+              <div class="alert alert-success my-3" role="alert" id="instruct">
+                Press start button then speak what you want to convert to text!
+              </div>
+            </div>
+
+
+    </div>
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+  </html>
